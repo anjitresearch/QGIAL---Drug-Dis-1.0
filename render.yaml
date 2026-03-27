@@ -5,6 +5,3 @@ services:
     plan: free
     dockerContext: .
     dockerfilePath: ./Dockerfile
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.9
