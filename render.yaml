@@ -3,7 +3,7 @@ services:
     name: qgial-dashboard
     env: python
     plan: free
-    buildCommand: pip install flask gunicorn plotly numpy pandas
+    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn web_dashboard.app_standalone:app --bind 0.0.0.0:$PORT --workers 1
     envVars:
       - key: PYTHON_VERSION
