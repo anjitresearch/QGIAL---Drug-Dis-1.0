@@ -3,8 +3,8 @@ services:
     name: qgial-dashboard
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app_standalone:app --bind 0.0.0.0:$PORT --workers 1
+    buildCommand: pip install -r requirements_render.txt
+    startCommand: gunicorn web_dashboard.app_standalone:app --bind 0.0.0.0:$PORT --workers 1
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.7

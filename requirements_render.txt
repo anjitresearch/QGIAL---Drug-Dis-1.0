@@ -1,0 +1,18 @@
+# Core Flask and Web Dependencies
+flask==3.1.3
+gunicorn==21.2.0
+plotly==6.6.0
+numpy==1.24.4
+pandas==2.0.0
+
+# Simplified Scientific Computing
+scipy==1.10.1
+scikit-learn==1.3.0
+
+# Chemistry (lightweight version)
+# Note: Full RDKit may cause issues on Render
+# rdkit-pypi==2023.9.2
+
+# Basic ML (without heavy dependencies)
+# torch>=2.0.0
+# tensorflow>=2.13.0
